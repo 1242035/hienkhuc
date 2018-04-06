@@ -1,0 +1,326 @@
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+html, body{
+	background-color:#d3d3d3;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	width:100%;
+	min-height:100vh;
+}
+div{
+	overflow:hidden;
+}
+.top-1em{
+	margin-top:1em;
+}
+.wrapper:{
+	min-height:100vh;
+	position:relative;
+}
+.container{
+	width:80%;
+	margin:auto;
+}
+.header{
+	background-color:black;
+	height:8.5em;
+}
+.header .site-title{
+	font-size:1.8em;
+	color:white;
+	line-height:3em;
+	width:100%;
+}
+.header .nav{
+	width:100%;
+}
+.header .nav .left{
+	width:50%;
+	float:left;
+}
+.header .nav .left ul{
+	list-style:none;
+}
+.header .nav .left ul li {
+	padding: 1em;
+	float:left;
+	margin-right:0.8em;
+	background-color:white;
+}
+.header .nav .left ul li a{
+	color:black;
+	text-decoration:none;
+}
+.header .nav .right{
+	width:50%;
+	float:left;
+	color:white;
+	line-height:3em;
+}
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    line-height: 3em;
+	color:white;
+	background-color:black;
+}
+.content{
+	width:100%;
+}
+.body{
+	background-color:white;
+	margin-bottom:1em;
+	margin-top:1em;
+	min-height:80vh;
+	padding:1em;
+}
+
+.body-left{
+	width:65%;
+	float:left;
+}
+.body-right{
+	width:30%;
+	float:right;
+}
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+}
+.alert{
+	width:100%;
+	line-height:3em;
+	font-size:1.5em;
+	font-weight:700;
+}
+.close{
+	margin-right:1em;
+}
+.alert-success{
+	background-color:#e4ffe0;
+	color:#72a383;
+}
+.alert-error{
+	background-color:#ffe2e7;
+	color:#a77365;
+}
+.alert .icon{
+	width:10%;	
+	text-align:center;
+}
+.alert .icon i{
+	vertical-align:middle;
+}
+.alert .message{
+	width:80%;
+}
+.forms{
+	font-size:1.5em;
+	font-weight:bold;
+}
+.break-word{
+	word-wrap:break-word;
+}
+.some-text{
+	font-weight:600
+}
+input[type=text] {
+    border: 1px solid #edebee; 
+    padding: 1em;
+    background: #f8f3f7;
+}
+.label{
+	font-size:1em;
+	font-weight:200;
+	color:#a7a1a3;
+	padding: 0.5em 0;
+}
+.small-form-field input{
+	width:30%;
+}
+.large-form-field input{
+	width:80%;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight:600;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-weight:800;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-weight:800;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-weight:800;
+}
+.space{
+	height:50vh;
+}
+span.checkbox{
+	display:block;
+}
+span.checkbox-target {
+    font-family: FontAwesome; /* use an icon font for the checkbox */    
+}
+input[type='checkbox'].checkbox {     
+    position: relative;
+    left: -999em; /* hide the real checkbox */
+}
+
+input[type='checkbox'].checkbox + span.checkbox-target:after {
+    content: "\f096"; /* In fontawesome, is an open square (fa-square-o) */
+}
+input[type='checkbox'].checkbox:checked + span.checkbox-target:after {
+    content: "\f046"; /* fontawesome checked box (fa-check-square-o) */
+}
+
+.sidebar .heading{
+	background-color:#deebfe;
+	padding:1.5em 1em;
+	font-size:1.2em;
+	font-weight:800;
+}
+.sidebar .item{
+	padding:1.5em 1em;
+}
+.sidebar .item .right{
+	padding-left: 1em;
+}
+.sidebar .item .right-link
+{
+	padding: 0 0 0.7em 0;
+}
+.sidebar .item .right-link a
+{
+	font-size:1.3em;
+	coloe:##2478bf;
+}
+.select{
+    padding: 1em;
+    width: 150px;
+    border: 2px solid #abc;
+}
+.button{
+	padding: 1.5em 3em;
+    background: black;
+    color: white;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+th,
+td {
+  padding: 6px 15px;
+}
+th {
+  background: #deebfe;
+  color: #000;
+  font-weight:800;
+  text-align: left;
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+  padding:1em;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+  padding:1em;
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+  background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+.list-arrow {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png) no-repeat top left;
+  margin: 0;
+  padding: 1px 7px 15px 25px;
+  list-style: none;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
